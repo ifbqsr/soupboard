@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#while echo $1 | grep ^- > /dev/null; do declare $( echo $1 | sed 's/-//g' | sed 's/=.*//g' | tr -d '\012')=$( echo $1 | sed 's/.*=//g' | tr -d '\012'); shift; done
+
+rm -f  /usr/viewtouch/dat/scripts/cwlist.txt
+
+#echo soup1=$soup1 >> /usr/viewtouch/dat/scripts/souplist.txt
+echo soup1=$1 > /usr/viewtouch/dat/scripts/cwlist.txt
+

@@ -1,0 +1,22 @@
+vtpos 0 30
+Soup4_2 Ta D7 E P////////+e D A D F #8db600 A ~ ~ ~ K A A K B A C A A C A
+S
+B BNC A Gc k DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_bnc A Is_this_the_correct_soup? A
+B bncxpm.jpg ~ ~ ~ ~ ~ A A A B SSP A Jo k DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ssp A Are_you_sure_you_want_to_do_this? A
+B sspxpm.jpg ~ ~ ~ ~ ~ A A A B SCT A Gc CA DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_sct A Are_you_sure_you_want_to_do_this? A
+B sctxpm.jpg ~ ~ ~ ~ ~ A A A B WMC A Jo CA DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_wmc A Are_you_sure_you_want_to_do_this? A
+B wmcxpm.jpg ~ ~ ~ ~ ~ A A A B COP A Gc Dc DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_cop A Are_you_sure_you_want_to_do_this? A
+B copxpm.jpg ~ ~ ~ ~ ~ A A A B TC A Jo Dc DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_tc A Are_you_sure_you_want_to_do_this? A
+B tcxpm.jpg ~ ~ ~ ~ ~ A A A B CTL A Gc E4 DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ctl A Are_you_sure_you_want_to_do_this? A
+B ctlxpm.jpg ~ ~ ~ ~ ~ A A A B ASL A Jo E4 DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_asl A Are_you_sure_you_want_to_do_this? A
+B aslxpm.jpg ~ ~ ~ ~ ~ A A A B olp A Gc GU DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_olp A Are_you_sure_you_want_to_do_this? A
+B olpxpm.jpg ~ ~ ~ ~ ~ A A A B swc A Jo GU DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_swc A Are_you_sure_you_want_to_do_this? A
+B swcxpm.jpg ~ ~ ~ ~ ~ A A A B ccc A Gc Hw DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ccc A Are_you_sure_you_want_to_do_this? A
+B cccxpm.jpg ~ ~ ~ ~ ~ A A A J Soup_2_of_4 A Es 8 Bk Bk C I D D9 D+ A B D/ D+ A B D/ D+ A EA B A A A
+A ~ ~ ~ ~ ~ ~ A A A B COC A Jo Hw DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_coc A Are_you_sure_you_want_to_do_this? A
+B cocxxpm.jpg ~ ~ ~ ~ ~ A A A B mc A Gc JM DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_mc A Are_you_sure_you_want_to_do_this? A
+B mcxxpm.jpg ~ ~ ~ ~ ~ A A A B Catering A M0 E4 DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ad-catering A Are_you_sure_you_want_to_do_this? A
+B xpmcatering.jpg ~ ~ ~ ~ ~ A A A B Quinoa A M0 GU DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ad-quinoa A Are_you_sure_you_want_to_do_this? A
+B xpmquinoa.jpg ~ ~ ~ ~ ~ A A A B Beet_Bowl A M0 Hw DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ad-beetbowl A Are_you_sure_you_want_to_do_this? A
+B xpmbeetbowl.jpg ~ ~ ~ ~ ~ A A A B Ask A M0 JM DI Ba C I B e D9 A B D/ D+ A B D/ D+ A EA B C Tb RUNCMD:_/usr/viewtouch/dat/scripts/soup2_ad-ask A Are_you_sure_you_want_to_do_this? A
+B xpmask.jpg ~ ~ ~ ~ ~ A A A ~ ~ B ~ ~ F ~ ~ B ~ A 

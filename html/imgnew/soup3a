@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Pull in store variables
+. /usr/viewtouch/dat/scripts/storeinfo
+
+curdate=`date '+%H:%M:%S %m/%d/%Y'`
+
+#Set last soup choice from button push
+echo soup3=$1 >> /usr/viewtouch/dat/scripts/souplist.txt

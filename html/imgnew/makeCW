@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#Pull in souplist.txt file
+. /var/www/html/cwlist.txt
+
+#What are the soup values?
+#echo $soup1
+#echo $soup2
+#echo $soup3
+
+cp -f /var/www/html/indexsoupsnew-GOLD.html /var/www/html/indexsoupsnew-GOLD.html-tmp
+
+sed -i "s/fruit1/$fruit1/g" /var/www/html/indexsoupsnew-GOLD.html
+sed -i "s/fruit2/$fruit2/g" /var/www/html/indexsoupsnew-GOLD.html
+#sed -i "s/soup3/$soup3/g" /var/www/html/indexsoupsnew-GOLD.html
+#sed -i "s/soup4/$soup4/g" /var/www/html/indexsoupsnew-GOLD.html
+
+mv -f /var/www/html/indexsoupsnew-GOLD.html /var/www/html/indexsoupsnew.html
+mv -f /var/www/html/indexsoupsnew-GOLD.html-tmp /var/www/html/indexsoupsnew-GOLD.html
+
+rm /home/viewtouch/Media/menu1/CL_BreakfastMenuBoard_01.jpg
+rm /home/viewtouch/Media/menu1/CL022cw.jpg
+wkhtmltoimage --disable-smart-width --width 1080 --height 1920 http://localhost/indexsoupsnew.html /home/viewtouch/Media/menu1/CL022cw.jpg
+rm .cache/xscreensaver/xscreensaver-getimage.cache

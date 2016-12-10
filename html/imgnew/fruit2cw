@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#Pull in store variables
+. /usr/viewtouch/dat/scripts/storeinfo
+
+#Setup a date to be used for email
+curdate=`date '+%H:%M:%S %m/%d/%Y'`
+
+#Set last fruit choice from button push
+echo fruit2=$1 >> /usr/viewtouch/dat/scripts/cwlist.txt
+
+#Email results
+cd /usr/viewtouch/dat/scripts   
+cp cwlist.txt cwlistmail.txt
+sed -i '1i\'"storenumber=$storenumber" cwlistmail.txt
+sed -i '/storenumber/G' cwlistmail.txt
+sed -i '3i\'"$curdate" cwlistmail.txt
+sed -i '/:/G' cwlistmail.txt
+mail -s "$storenumber CW board changed" soups@teriyakiexperience.com < cwlistmail.txt
+rm -f souplistmail.txt
+
+#Send souplist.txt, make soup image and display
+scp -P220 /usr/viewtouch/dat/scripts/cwlist.txt menu:/var/www/html
+ssh -p 220 -X menu -T /home/viewtouch/bin/makeCW

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#Pull in store variables
+. /usr/viewtouch/dat/scripts/storeinfo
+
+#Setup a date to be used for email
+curdate=`date '+%H:%M:%S %m/%d/%Y'`
+
+#Set last soup choice from button push
+echo soup4=$1 >> /usr/viewtouch/dat/scripts/souplist.txt
+
+#Email results
+cd /usr/viewtouch/dat/scripts   
+cp souplist.txt souplistmail.txt
+sed -i '1i\'"storenumber=$storenumber" souplistmail.txt
+sed -i '/storenumber/G' souplistmail.txt
+sed -i '3i\'"$curdate" souplistmail.txt
+sed -i '/:/G' souplistmail.txt
+mail -s "$storenumber Soup board changed" soups@teriyakiexperience.com < souplistmail.txt
+rm -f souplistmail.txt
+
+#Send souplist.txt, make soup image and display
+scp -P220 /usr/viewtouch/dat/scripts/souplist.txt menu:/var/www/html
+ssh -p 220 -X menu -T /home/viewtouch/bin/makesoup4
